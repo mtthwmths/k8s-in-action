@@ -12,6 +12,9 @@ adduser matt sudo
 # had to remove /media/cdrom from apt sources
 # https://askubuntu.com/questions/236288/apt-get-asks-me-to-insert-cd-why
 sudo vi /etc/apt/sources.list
+# brother, vim is the way. repent of emacs.
+export VISUAL=vim
+export EDITOR="$VISUAL"
 # make github ssh key
 ssh-keygen -t ed25519 -C "mtthwmths@gmail.com"
 # check ssh-agent is running
